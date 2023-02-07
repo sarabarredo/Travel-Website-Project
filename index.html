@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | ViajesXpress</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/288ef5681a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/jpg" href="src/img/favicon.png"/>
+</head>
+<body>
+    <div class="hero">
+        <header>
+            <nav>
+                <a href="index.html"><img src="src/img/logo.png" class="logo" alt="logo"></a>
+                <i class="fas fa-bars" id="ham-menu"></i>
+                <ul id="nav-bar">
+                <li><a href="#" class="activo">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <p>Visita <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+    </div>
+    <section id="scroll-button">
+        <a class="scroll-btn" href="#destinations"></a>
+      </section>
+    <section class="destinations">
+        <span id="destinations">&nbsp;</span>
+        <h2>Abre paso a nuevas experiencias</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nulla, reiciendis ducimus quasi unde minus vero voluptate excepturi error minima nam architecto, quibusdam, debitis quos eveniet exercitationem modi voluptates saepe corrupti nisi dolore? Aliquam error enim hic quo nostrum dolorum, cum aspernatur! Libero, iusto ipsam quas quaerat perspiciatis dolore dolores!</p> 
+    
+    <div class="searcher">
+        <div class="searcher-img">
+            <img src="src/img/searcher-img.jpg" id="imagenCambiante">
+        </div>
+
+        <form>
+            <div class="input-box">
+                <label for="dest">¿A dónde te apetece ir?</label>
+                <select name="destinos" id="dest">
+                    <option disabled selected="">Selecciona un destino</option>
+                    <option value="src/img/atenas1.jpg">Atenas</option>
+                    <option value="src/img/bangkok1.jpg">Bangkok</option>
+                    <option value="src/img/elcairo1.jpg">El Cairo</option>
+                    <option value="src/img/helsinki1.jpg">Helsinki</option>
+                    <option value="src/img/lima1.jpg">Lima</option>
+                    <option value="src/img/londres1.jpg">Londres</option>
+                    <option value="src/img/oslo1.jpg">Oslo</option>
+                    <option value="src/img/paris1.jpg">París</option>
+                    <option value="src/img/praga1.jpg">Praga</option>
+                    <option value="src/img/roma1.jpg">Roma</option>
+                    <option value="src/img/seul1.jpg">Seúl</option>
+                    <option value="src/img/tokio1.jpg">Tokio</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label for="viajeros">¿Cuántos viajeros sois?</label>
+                <select name="viajeros" id="viajeros">
+                    <option disabled selected="">Selecciona nº de viajeros</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7+">7+</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label for="fecha-salida">Fecha de salida</label>
+                <input type="date" name="fecha-salida" id="fecha-salida" min="2023-01-01" max="2024-01-01">
+            </div>
+
+            <div class="input-box">
+                <label for="fecha-regreso">Fecha de regreso</label>
+                <input type="date" name="fecha-regreso" id="fecha-regreso" min="2023-01-02" max="2024-01-02">
+            </div>
+            
+            <input type="submit" class="searcher-btn" value="Buscar">
+        </form>
+
+    </div>
+    </section>
+
+        <div class="small-cards">
+            <div class="small-card">
+                <img src="src/img/illustration-2.svg" alt="Ilustracion">
+                    <p>Ahórrate las interminables colas de los aeropuertos con nuestro FastPass* 
+                        <br>
+                        *Consultar <a href="politica-cookies.html#condiciones" style="text-decoration: none; color: #C64350"><strong>condiciones</strong></a>
+                    </p> 
+            </div>
+
+            <div class="small-card">
+                <img src="src/img/illustration-3.svg" alt="Ilustracion">
+                    <p>Viaja a tu destino elegido sin preocuparte de nada:
+                        <br>
+                        ¡Nosotros lo planeamos todo por ti!
+                    </p>
+            </div>
+
+            <div class="small-card">
+                <img src="src/img/illustration-4.svg" alt="Ilustracion">
+                    <p>¡Disfruta de la estancia en tus vacaciones de ensueño!
+                        <br>
+                        ¿Estás pensando ya en tu próximo destino...?
+                    </p>
+            </div>
+        </div>
+
+    <h2 class="destinosPopulares">Destinos populares</h2>
+
+    <div class="cards">
+            <div class="card">
+                <img src="src/img/atenas.jpg" alt="Imagen Atenas">
+                <div class="details">
+                    <h3>Atenas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos illum consequatur quam repellat eaque debitis provident deserunt velit eos libero quidem.</p>
+                    <p>*Desde <strong>75€/noche</strong></p>
+                    <button class="card-btn" role="link" onclick="location.href='atenas.html'">
+                        Visitar <span>&rarr;</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="src/img/paris.jpg" alt="Imagen Paris">
+                <div class="details">
+                    <h3>París</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, iste vitae quia quos pariatur culpa et dolorem laudantium. Dolores, corrupti sapiente neque veniam vitae itaque!</p>
+                    <p>*Desde <strong>90€/noche</strong></p>
+                    <button class="card-btn">
+                        Visitar <span>&rarr;</span>
+                    </button>
+                    </div>
+                </div>
+
+            <div class="card">
+                <img src="src/img/oslo.jpg" alt="Imagen Oslo">
+                    <div class="details">
+                        <h3>Oslo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, consequuntur adipisci nostrum fugit sed iusto ipsam facere deleniti laudantium fugiat!</p>
+                        <p>*Desde <strong>70€/noche</strong></p>
+                        <button class="card-btn">
+                            Visitar <span>&rarr;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        <div class="newsletter-container">
+            <div class="newsletter-pic"></div>
+            <div class="newsletter">
+                <h1>No te pierdas nada</h1>
+                <p>Suscríbete a nuestro boletín informativo y sé el primero en enterarte de las últimas ofertas.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="emailNewsletter" placeholder="tucorreo@direccion.com">
+                    <input type="submit" class="submitNewsletter" value="Suscribirse">
+                </form>
+            </div>
+        </div>
+
+        <section class="testimonials">
+            <h2 class="testimonials-title">¿Qué opinan nuestros usuarios?</h2>
+            <div class="container">
+                <div class="slides">
+                    <div class="slide-ctrl" id="slide-1"></div>
+                    <div class="slide-ctrl" id="slide-2"></div>
+                    <div class="slide-ctrl" id="slide-3"></div>
+
+                    <figure class="slide">
+                        <blockquote class="testimonial">
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse vitae iure aliquam eos, perferendis voluptatibus cupiditate dolore earum sed commodi omnis itaque ipsam eum delectus obcaecati, doloremque ipsum repellendus ducimus mollitia enim eligendi incidunt provident."</p>
+                            <cite>Miranda Fernández</cite>
+                        </blockquote>
+                    </figure>
+
+                    <figure class="slide">
+                        <blockquote class="testimonial">
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cumque velit laudantium aliquam incidunt? Commodi corrupti fugit sunt ex optio."</p>
+                            <cite>Alberto Núñez</cite>
+                        </blockquote>
+                    </figure>
+
+                    <figure class="slide">
+                        <blockquote class="testimonial">
+                            <p>""Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum minus dolore libero cum! Nostrum necessitatibus incidunt enim, deserunt sint harum. Reiciendis accusantium assumenda minima totam deleniti quisquam."</p>
+                            <cite>Rosa García</cite>
+                        </blockquote>
+                    </figure>
+
+                    <div class="slides-ctrl">
+                        <a href="#slide-1" class="slide-btn">Miranda Fernández</a>
+                        <a href="#slide-2" class="slide-btn">Alberto Núñez</a>
+                        <a href="#slide-3" class="slide-btn">Rosa García</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="footer-content">
+            <img class="footer-logo" src="src/img/logo.png" alt="logo">
+            <div class="rrss-icons">
+                <img class="rrss" src="src/img/logo-facebook.svg" alt="Icono Facebook">
+                <img class="rrss" src="src/img/logo-twitter.svg" alt="Icono Twitter">
+                <img class="rrss" src="src/img/logo-instagram.svg" alt="Icono Instagram">
+            </div>
+        <div class="cookies">
+            <a href="politica-cookies.html#aviso">Aviso legal</a>
+            <a href="politica-cookies.html#cookies">Política de cookies</a>
+        </div>
+        <p class="copyright"> &copy; ViajesXpress All rights reserved</p>
+        </div>
+        <div class="footer-credits">
+            <p>Desarrollado por - <a href="https://github.com/sarabarredo" target="_blank">Sara Barredo</a></p>
+        </div>
+    </footer>
+
+   <script src="/script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<!-- AÑADIR ESTO CUANDO TENGA UN HOST. EN LOCAL NO FUNCIONA. -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="cookies-consent">
+        <img src="img/cookies.png" alt="cookies">
+        <div class="cookie-content">
+            <h1>Cookies</h1>
+            <p>Utilizamos cookies propias y de terceros durante la navegación por el sitio web, con la finalidad de permitir el acceso a las funcionalidades de la página web, extraer estadísticas de tráfico y mejorar la experiencia del usuario.</p>
+            <div class="cookie-btn">
+                <button class="cookies" id="item">Aceptar</button>
+                <a href="#" id="item">Política de cookies</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cookiePopUp = document.querySelector('.cookies-consent'),
+        acceptBtn = cookiePopUp.querySelector('.cookies');
+        acceptBtn.onclick = () => {
+            // Estableciendo la cookie por un mes. Cuando finalice el mes, la cookie expirará automáticamente.
+            document.cookie = "Cookie por defecto=Hecha por Sara; max-age="+60*60*24*30;
+            if(document.cookie){
+                cookiePopUp.classList.add('hide'); // Oculta el pop-up de las cookies una vez se establecen.
+            } else {
+                alert('¡La cookie no puede establecerse! Por favor, revisa la configuracion de tu navegador'); // Si las cookies no se pueden establecer, salta este alert.    
+            }
+        }
+        // Ahora ocultaré el pop-up para que no vuelva a salir si todas las cookies se han establecido
+        // y no hay ninguna expirada.
+        // Si el string dado no se encuentra en ninguna de las cookies, devolverá -1 y se mostrará el pop-up. Si devuelve -1, se ocultará el pop-up.
+        let checkCookie = document.cookie.indexOf("Cookie por defecto=Hecha por Sara");
+        checkCookie != -1 ? cookiePopUp.classList.add('hide') : cookiePopUp.classList.remove('hide');  
+    </script>
+   
+</body>
+</html>
+
+
+    
